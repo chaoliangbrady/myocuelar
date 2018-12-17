@@ -6,7 +6,7 @@ class Medication extends StatelessWidget {
   final String name;
   final String brand;
   final String eye;
-  final int frequency;
+  final String frequency;
   final List<String> takenFreq;
   final String betrcapid;
 
@@ -65,7 +65,7 @@ Widget _buildMedicationImage(String betrcapid, String name) {
   );
 }
 
-Widget _buildMedicationDetail(TextTheme textTheme, brand, String eye, int frequency, List<String>takenFreq) {
+Widget _buildMedicationDetail(TextTheme textTheme, brand, String eye, String frequency, List<String>takenFreq) {
   return new Expanded(
     child: new Container(
       padding: EdgeInsets.only(left: 15.0),
